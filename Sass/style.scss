@@ -15,15 +15,23 @@
 .info-box {
     margin: 0 auto;
     padding: 10px 15px 0;
-    width: 90%;
     height: 485px;
     box-shadow: 0 0 10px #999;
+    width: 90%;
+
+    @media screen and (min-width: 560px) {
+        max-width: 760px;
+    }
 }
 
 .info-box {
     &__heading {
         color: #4a0985;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 560px) {
+            font-size: 25px;
+        }
 
         & span {
             margin-right: 5px;
@@ -34,18 +42,24 @@
 
 .info-box {
     .info-box__ul {
-        height: 405px;
+        max-height: 405px;
         overflow-y: scroll;
         text-align: right;
         padding-right: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        align-items: flex-start;
+
+        @media screen and (min-width: 560px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+        }
     }
 
     .info-box__li {
-        width: 50%;
+        @media screen and (min-width: 560px) {
+            width: 50%;
+        }
+
         &:not(:last-child) {
             margin-bottom: 10px;
         }

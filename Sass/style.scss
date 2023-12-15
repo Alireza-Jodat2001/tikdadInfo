@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Dirooz";
+    src: url("../Font/Dirooz.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Dirooz;
+}
+
+.info-box {
+    margin: 0 auto;
+    padding: 10px 15px 0;
+    width: 90%;
+    height: 485px;
+    box-shadow: 0 0 10px #999;
+}
+
+.info-box {
+    &__heading {
+        color: #4a0985;
+        margin-bottom: 15px;
+
+        & span {
+            margin-right: 5px;
+            color: #999;
+        }
+    }
+}
+
+.info-box {
+    .info-box__ul {
+        height: 405px;
+        overflow-y: scroll;
+        text-align: right;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .info-box__li {
+        width: 50%;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #999;
+        }
+
+        p {
+            margin-top: -5px;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e6d6ee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbb4d9;
+}
